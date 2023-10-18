@@ -1,4 +1,4 @@
-/* whole page style*/
+/* whole page style */
 body {
   padding: 0;
   margin: 0;
@@ -15,10 +15,11 @@ body {
   justify-content: space-evenly;
   padding: 10px;
   width: 100%;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(33, 37, 41);
 }
-@media (max-width:300vw) {
+
+@media (max-width: 768px) {
   .topnavbar {
     float: none;
     display: flex;
@@ -35,7 +36,6 @@ body {
 }
 
 /* image styling */
-
 .image1 {
   margin: 20px;
   min-width: 10vw;
@@ -55,9 +55,28 @@ body {
 }
 
 /* text */
-h1, h2, h3, p {
+h1, h3, p {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(226, 250, 219);
+}
+
+.rainbow {
+  font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+  transition: color 0.5s ease;
+}
+
+@keyframes rainbow {
+  0%   { color: violet; }
+  10%  { color: indigo; }
+  25%  { color: blue; }
+  50%  { color: green; }
+  75%  { color: yellow; }
+  100% { color: red; }
+}
+
+.rainbow {
+  animation: rainbow 10s infinite;
 }
 
 /* project link(s) */
@@ -70,18 +89,18 @@ h1, h2, h3, p {
 }
 
 .image3 {
-height: var(--hero);
-width: 25vw;
-cursor: pointer;
-border: 1px solid grey;
-border-radius: 20px;
+  height: 15vh;
+  width: 25vw;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 20px;
 }
 
 .image4 {
   height: 15vh;
   width: 25vw;
   object-fit: fill;
-  cursor:pointer;
+  cursor: pointer;
   border: 1px solid grey;
   border-radius: 20px;
 }
