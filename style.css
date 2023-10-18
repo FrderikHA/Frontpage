@@ -1,18 +1,32 @@
-/* whole page */
-* {
+/* whole page style*/
+body {
   padding: 0;
   margin: 0;
-  background-color: rgb(141, 153, 174);
-
+  background-color: rgb(108, 117, 125);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* NavBAR */
+/* nav bar styling */
 .topnavbar {
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
-  width: 100vw;
-  background-color: rgb(43, 45, 66);
+  width: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: rgb(33, 37, 41);
+}
+@media (max-width:300vw) {
+  .topnavbar {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+  }
 }
 
 .topnavbar a:hover {
@@ -21,21 +35,15 @@
 }
 
 /* image styling */
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 
-/* Picture that is not me */
 .image1 {
-  margin: 40px;
-  max-width: 100%;
-  width: 150px;
-  height: 150px;
+  margin: 20px;
+  min-width: 10vw;
+  max-width: 20vw;
+  min-height: 10vw;
+  max-height: 20vh;
   border: 1px solid grey;
-  border-radius: 100px;
+  border-radius: 100%;
 }
 
 .imganimation {
@@ -46,35 +54,34 @@ body {
   margin-top: 20px;
 }
 
-/*texts */
-h1, h2, p {
-  font-family: Arial;
-}
-
-/* links */
-.portfolio, .projects, .about-me {
-  color: rgb(226, 250, 219);
+/* text */
+h1, h2, h3, p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  text-transform: capitalize;
+  color: rgb(226, 250, 219);
 }
 
-h3 {
-  display:flex;
-  justify-content: center;
-  font-family: Arial;
-  margin: 100px 0px 0px 0px;
-
-}
-.Projects {
-  margin-bottom: 20px;
-}
-
-
+/* project link(s) */
 .image2 {
-  height: 100px;
-  width: 200px;
-  border: solid 1px gray;
-  border-radius: 20px;
+  height: 15vh;
+  width: 25vw;
   cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+.image3 {
+height: var(--hero);
+width: 25vw;
+cursor: pointer;
+border: 1px solid grey;
+border-radius: 20px;
+}
+
+.image4 {
+  height: 15vh;
+  width: 25vw;
+  object-fit: fill;
+  cursor:pointer;
+  border: 1px solid grey;
+  border-radius: 20px;
 }
