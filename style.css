@@ -87,3 +87,8 @@ h1, h3, p {
   border: 1px solid grey;
   border-radius: 20px;
 }
+
+footer img {max-width: 30px;
+display: block;
+margin: 0px 0px
+}
